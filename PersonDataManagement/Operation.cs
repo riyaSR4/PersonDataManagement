@@ -31,7 +31,11 @@ namespace PersonDataManagement
             var result = list.Where(x => x.Name==name);
             Display(result.ToList());
         }
-
+        public void SkipRecordsOfAge(List<Person> list)
+        {
+            var result = list.OrderBy(x => x.Age).Skip(list.Count(x => x.Age<60));
+            Display(result.ToList());
+        }
         public void Display(List<Person> list)
         {
             foreach (var data in list)

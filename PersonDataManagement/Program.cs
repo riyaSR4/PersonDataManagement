@@ -19,7 +19,7 @@ namespace PersonDataManagement
                 SSN = 2,
                 Name = "b",
                 Address = "b",
-                Age = 15
+                Age = 65
             });
             persons.Add(new Person()
             {
@@ -40,7 +40,7 @@ namespace PersonDataManagement
                 SSN = 5,
                 Name = "e",
                 Address = "e",
-                Age = 30
+                Age = 80
             });
             Operation operation = new Operation();
             operation.RetrieveTopTwoRecords(persons);
@@ -50,6 +50,8 @@ namespace PersonDataManagement
             operation.RetrieveAverageAge(persons);
             Console.WriteLine("Check for Specific Name");
             operation.RetrievePersonDetailsByName(persons);
+            Console.WriteLine("Skip age less than 60");
+            operation.SkipRecordsOfAge(persons);
         }
     }
 }
