@@ -43,6 +43,7 @@ namespace PersonDataManagement
                 Age = 80
             });
             Operation operation = new Operation();
+            Console.WriteLine("Retrieve top 2 records for age less than 60");
             operation.RetrieveTopTwoRecords(persons);
             Console.WriteLine("Retrieve age between 13 to 18");
             operation.RetrieveRecordsInBetweenAge(persons);
