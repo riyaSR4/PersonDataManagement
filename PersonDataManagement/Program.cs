@@ -42,6 +42,8 @@ namespace PersonDataManagement
                 Address = "e",
                 Age = 30
             });
+            Operation operation = new Operation();
+            operation.RetrieveTopTwoRecords(persons);
         }
     }
 }
