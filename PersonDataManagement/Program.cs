@@ -46,6 +46,8 @@ namespace PersonDataManagement
             operation.RetrieveTopTwoRecords(persons);
             Console.WriteLine("Retrieve age between 13 to 18");
             operation.RetrieveRecordsInBetweenAge(persons);
+            Console.WriteLine("Retrieve average age");
+            operation.RetrieveAverageAge(persons);
         }
     }
 }
