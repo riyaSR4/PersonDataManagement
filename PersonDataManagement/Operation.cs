@@ -36,6 +36,14 @@ namespace PersonDataManagement
             var result = list.OrderBy(x => x.Age).Skip(list.Count(x => x.Age<60));
             Display(result.ToList());
         }
+        public void DeletePersonFromList(List<Person> list)
+        {
+            Console.WriteLine("Enter Name to Delete");
+            string name = Console.ReadLine();
+            var result = list.Find(x => x.Name == name);
+            list.Remove(result);
+            Display(list);
+        }
         public void Display(List<Person> list)
         {
             foreach (var data in list)

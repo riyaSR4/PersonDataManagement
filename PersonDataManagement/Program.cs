@@ -52,6 +52,8 @@ namespace PersonDataManagement
             operation.RetrievePersonDetailsByName(persons);
             Console.WriteLine("Skip age less than 60");
             operation.SkipRecordsOfAge(persons);
+            Console.WriteLine("Remove Specific Name");
+            operation.DeletePersonFromList(persons);
         }
     }
 }
