@@ -48,6 +48,8 @@ namespace PersonDataManagement
             operation.RetrieveRecordsInBetweenAge(persons);
             Console.WriteLine("Retrieve average age");
             operation.RetrieveAverageAge(persons);
+            Console.WriteLine("Check for Specific Name");
+            operation.RetrievePersonDetailsByName(persons);
         }
     }
 }
